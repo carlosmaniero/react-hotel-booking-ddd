@@ -11,7 +11,7 @@ describe('Regular', () => {
 
     it('returns the Regular appartments list', () => {
         expect(new Regular().apartments).toHaveLength(25)
-
+        
         for (let apartmentNumber = 7; apartmentNumber <= 31; apartmentNumber++) {
             expect(new Regular().apartments).toContainEqual({number: apartmentNumber})
         }
